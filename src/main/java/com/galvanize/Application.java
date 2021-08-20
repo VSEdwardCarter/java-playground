@@ -2,7 +2,9 @@ package com.galvanize;
 
 public class Application {
     public static void main(String[] args) {
-        System.out.println("HELLO WORLD");
+        fruit Banana = new fruit("medium","Yellow", "Banana");
+        System.out.println(Banana.getColor());
     }
-
 }
+
+
