@@ -1,11 +1,11 @@
 package com.galvanize;
 
-public class fruit {
+public class Fruit {
     private String size;
     private String color;
     private String type;
 
-    public fruit(String size, String color, String type) {
+    public Fruit(String size, String color, String type) {
         this.size = size;
         this.color = color;
         this.type = type;

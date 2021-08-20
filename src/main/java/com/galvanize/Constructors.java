@@ -3,18 +3,18 @@ package com.galvanize;
 import java.time.LocalDateTime;
 
 public class Constructors {
-    private String orderNumber;
+    private int orderNumber;
     private String name;
     private java.time.LocalDateTime createdDate;
 
     //your code goes here, do not change any existing code
-    public Constructors(String whom, String ordnum){
+    public Constructors(String whom, int ordnum){
         name = whom;
         orderNumber = ordnum;
         createdDate = LocalDateTime.now() ;
     }
 
-    public String getOrderNumber() {
+    public int getOrderNumber() {
         return orderNumber;
     }
 
@@ -25,5 +25,15 @@ public class Constructors {
     public LocalDateTime getCreatedDate() {
         return createdDate;
     }
+
+    @Override
+    public String toString() {
+        return "Constructors{" +
+                "orderNumber=" + orderNumber +
+                ", name='" + name + '\'' +
+                ", createdDate=" + createdDate +
+                '}';
+    }
 }
+
 
