@@ -8,6 +8,7 @@ public class ApplicationDataStructure {
         String[] fruit = {"Apple", "Banana", "Starfruit", "Peach", "Mango", "Pineapple"};
 
         System.out.println(app.toSentence(fruit));
+        System.out.println(app.Setence2(fruit));
 
     }
     public String toSentence(String[] input){
@@ -30,7 +31,17 @@ public class ApplicationDataStructure {
         return everyResult;
         }
 
-    }
 
-//           for(String fruit: input){
-//                   everyResult += fruit +", ";
+   public String Setence2(String[] input){
+        String output = "";
+        for (int i = 0; i < input.length; i++) {
+            output += input;
+            if(i == input.length -2){
+                output += " and ";
+            }else if (i < input.length -2){
+                output += ", ";}
+
+            }
+        return output;
+        }
+    }
